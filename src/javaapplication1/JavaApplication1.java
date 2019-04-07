@@ -10,12 +10,20 @@ package javaapplication1;
  * @author world
  */
 public class JavaApplication1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+private static final String osName=System.getProperty("os.name");
+private static final String dataModel=
+        System.getProperty("sun.arch.data.model");
+private static final String vmVersion=
+        System.getProperty("java.vm.version");
+private static final String osArch=
+        System.getProperty("os.arch");
+   
+public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("OS Name:"+osName);
+        System.out.println("dataModel:"+dataModel);
+        System.out.println("vmVersion:"+vmVersion);
+        System.out.println("osArch:"+osArch);
     }
     
 }
